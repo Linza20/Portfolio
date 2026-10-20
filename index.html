@@ -1,0 +1,1861 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Linza Sara Johnson</title>
+<meta name="description" content="Linza Sara Johnson — frontend and software developer in Bangalore. React applications on live REST APIs, Python data tooling, and machine learning classification work.">
+<meta name="author" content="Linza Sara Johnson">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Linza Sara Johnson">
+<meta property="og:description" content="Frontend and software developer. React applications on live REST APIs, Python data tooling, applied machine learning. B.Tech CSE (AI &amp; ML), Christ University, 2027.">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBF7F0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230F5B4C'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23F3E6CC' text-anchor='middle'%3ELJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Jost:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap">
+
+<style>
+/* Emerald Velvet, luxury-retail treatment. Layout concept: warm ivory ground, content
+   carried in large soft-cornered panels with grain and gentle shadow, deep emerald
+   panels for the hero visual and the close. Single committed warm palette. */
+:root{
+  --ivory:#FBF7F0;
+  --ivory-2:#F4ECE0;
+  --sand:#E7D9C6;
+  --sand-soft:#EFE5D7;
+  --line:#E4D7C4;
+
+  --ink:#2A241D;
+  --ink-2:#6A5D4F;
+  --ink-3:#9A8A78;
+
+  --emerald:#0F5B4C;
+  --emerald-deep:#0A4034;
+  --forest:#1E4738;
+  --gold:#C9A84C;
+  --gold-ink:#96761F;
+  --cream:#F5F0E6;
+
+  --on-dark:#F6EFE2;
+  --on-dark-2:#CFDCD2;
+  --on-dark-3:#92A89B;
+  --dark-line:#2C5B4A;
+
+  --b-good:#2E7D5B;
+  --b-mod:#A8822B;
+  --b-sens:#BE6B2C;
+  --b-bad:#B4442F;
+  --b-vbad:#9C3A5A;
+
+  --serif:"Fraunces","Georgia","Times New Roman",serif;
+  --sans:"Jost","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+
+  --r:28px; --r-md:18px; --r-sm:12px;
+  --shadow:0 24px 60px -30px rgba(42,36,29,.42);
+  --shadow-sm:0 12px 30px -18px rgba(42,36,29,.38);
+
+  --gl:max(20px, env(safe-area-inset-left, 0px));
+  --gr:max(20px, env(safe-area-inset-right, 0px));
+  --measure:1180px;
+
+  color-scheme: light;
+}
+*,*::before,*::after{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:
+    radial-gradient(900px 560px at 88% -6%, rgba(201,168,76,.13), transparent 62%),
+    radial-gradient(720px 520px at 2% 22%, rgba(15,91,76,.07), transparent 60%),
+    var(--ivory);
+  color:var(--ink);
+  font-family:var(--sans);font-size:16.5px;font-weight:300;line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body.locked{overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ivory)}
+
+/* film grain over the whole page */
+body::after{
+  content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.45;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.42'/%3E%3C/svg%3E");
+  mix-blend-mode:multiply;
+}
+main,header,footer,#overlay{position:relative;z-index:2}
+
+h1,h2,h3,h4,h5{margin:0;font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+p{margin:0}
+ul,ol,dl{margin:0;padding:0;list-style:none}
+a{color:inherit}
+button,input,textarea{font:inherit;color:inherit}
+button{background:none;border:none;padding:0;cursor:pointer}
+img,svg{max-width:100%}
+:focus-visible{outline:2px solid var(--gold-ink);outline-offset:3px}
+
+.page{width:100%;max-width:var(--measure);margin-inline:auto;padding-left:var(--gl);padding-right:var(--gr)}
+.prose{max-width:60ch}
+.tnum{font-variant-numeric:tabular-nums}
+
+.eyebrow{font-family:var(--sans);font-weight:400;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-ink)}
+.eyebrow.muted{color:var(--ink-3)}
+.lead{font-size:clamp(17px,1.9vw,20.5px);line-height:1.72;color:var(--ink-2);font-weight:300}
+.body{color:var(--ink-2);font-size:16.5px;font-weight:300}
+.body + .body{margin-top:16px}
+.note{font-family:var(--mono);font-size:10.5px;line-height:1.75;color:var(--ink-3);letter-spacing:.01em}
+.serif-sm{font-family:var(--serif);font-size:19px}
+
+/* pills + links */
+.pill{
+  display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;
+  font-size:14px;font-weight:400;letter-spacing:.06em;text-decoration:none;
+  transition:transform .25s cubic-bezier(.2,.7,.3,1),box-shadow .25s,background .25s,color .25s,border-color .25s;
+}
+.pill-solid{background:var(--emerald);color:var(--cream);box-shadow:var(--shadow-sm)}
+.pill-solid:hover{background:var(--emerald-deep);transform:translateY(-2px)}
+.pill-out{border:1px solid var(--sand);color:var(--ink);background:rgba(255,255,255,.5)}
+.pill-out:hover{border-color:var(--gold);background:rgba(255,255,255,.9);transform:translateY(-2px)}
+.pill-gold{background:var(--gold);color:#3B2F0E}
+.pill-gold:hover{background:#D8B85F;transform:translateY(-2px)}
+.pill-ghost-dark{border:1px solid var(--dark-line);color:var(--on-dark)}
+.pill-ghost-dark:hover{border-color:var(--gold);color:var(--gold)}
+
+.ulink{text-decoration:none;border-bottom:1px solid var(--sand);padding-bottom:2px;transition:.22s}
+.ulink:hover{color:var(--emerald);border-color:var(--gold)}
+.todo{
+  display:inline-flex;align-items:center;min-height:30px;padding:0 13px;border-radius:999px;
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+  color:var(--gold-ink);border:1px dashed rgba(201,168,76,.6);background:rgba(201,168,76,.09);
+}
+
+/* panels */
+.panel{border-radius:var(--r);background:#FFFDF9;box-shadow:var(--shadow);border:1px solid rgba(228,215,196,.8);position:relative;overflow:hidden}
+.panel-sand{background:linear-gradient(170deg,#F7EFE3,#EFE3D2);border-color:rgba(214,196,170,.7)}
+.panel-dark{
+  border-radius:var(--r);position:relative;overflow:hidden;color:var(--on-dark);
+  background:
+    radial-gradient(520px 320px at 78% 8%, rgba(201,168,76,.26), transparent 62%),
+    linear-gradient(158deg, #15523F 0%, #0F5B4C 42%, #0A4034 100%);
+  box-shadow:0 30px 70px -34px rgba(10,64,52,.75);
+}
+.panel-dark::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n2)' opacity='0.5'/%3E%3C/svg%3E");
+}
+.panel-dark > *{position:relative;z-index:2}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(251,247,240,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(228,215,196,.7)}
+.bar-in{display:flex;align-items:center;gap:20px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.mono-mark{
+  width:38px;height:38px;border-radius:12px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(150deg,#15523F,#0A4034);color:var(--gold);
+  font-family:var(--serif);font-size:15px;letter-spacing:.02em;box-shadow:var(--shadow-sm);
+}
+.brand-nm{font-family:var(--serif);font-size:17px;white-space:nowrap}
+.bar-nav{display:flex;gap:30px;margin-left:auto}
+.bar-nav a{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);text-decoration:none;padding-block:6px;border-bottom:1px solid transparent;transition:.22s}
+.bar-nav a:hover{color:var(--ink)}
+.bar-nav a[aria-current="true"]{color:var(--emerald);border-bottom-color:var(--gold)}
+.bar-cta{margin-left:28px;min-height:42px;padding:0 20px;font-size:12.5px}
+.menu-btn{display:none;margin-left:auto;align-items:center;gap:10px;min-height:46px;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.menu-btn .bars{display:grid;gap:4px;width:19px}
+.menu-btn .bars i{height:1px;background:var(--ink);display:block}
+
+/* ---------- phone index ---------- */
+#overlay{
+  position:fixed;inset:0;z-index:70;display:flex;flex-direction:column;
+  background:radial-gradient(600px 400px at 80% 0%, rgba(201,168,76,.16), transparent 60%), var(--ivory);
+  padding-top:calc(env(safe-area-inset-top,0px) + 16px);
+  padding-bottom:calc(env(safe-area-inset-bottom,0px) + 26px);
+  padding-left:var(--gl);padding-right:var(--gr);overflow-y:auto;overscroll-behavior:contain;
+}
+#overlay[hidden]{display:none}
+.ov-top{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:46px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.ov-close{min-height:46px;display:inline-flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.ov-list{flex:1;margin-top:10px}
+.ov-list a{display:flex;align-items:baseline;gap:16px;text-decoration:none;padding:18px 0;border-bottom:1px solid rgba(228,215,196,.7);min-height:46px}
+.ov-list .n{font-family:var(--mono);font-size:10px;color:var(--gold-ink);letter-spacing:.14em;width:22px;flex:none}
+.ov-list .t{font-family:var(--serif);font-size:clamp(28px,8.4vw,40px);line-height:1}
+.ov-list .d{margin-left:auto;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);text-align:right}
+.ov-foot{padding-top:24px;display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- hero ---------- */
+.hero{padding-top:clamp(36px,5.4vw,70px);padding-bottom:clamp(44px,6vw,86px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:clamp(30px,4.6vw,70px);align-items:center}
+#nameplate{
+  font-size:clamp(50px,8.6vw,104px);line-height:.96;letter-spacing:-.028em;
+  margin-block:clamp(16px,2.4vw,26px) clamp(20px,2.8vw,30px);cursor:default;
+}
+#nameplate .ln{display:block}
+#nameplate .ln.it{font-style:italic;color:var(--emerald)}
+#nameplate span.ch{display:inline-block;font-variation-settings:"opsz" 120,"wght" 400;will-change:font-variation-settings}
+#nameplate .sp{display:inline-block;width:.26em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(24px,3vw,34px)}
+.hero-mail{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:14px;color:var(--ink-2)}
+.hero-facts{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
+.hero-facts div{min-width:0}
+.hero-facts dt{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px}
+.hero-facts dd{margin:0;font-family:var(--serif);font-size:16px}
+
+/* hero showcase panel */
+.showcase{padding:clamp(22px,2.8vw,34px);min-height:clamp(380px,46vw,480px);display:flex;flex-direction:column;gap:18px}
+.showcase-top{display:flex;align-items:center;gap:14px}
+.showcase-top .eyebrow{color:var(--gold)}
+.sc-arc{position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;border:1px solid rgba(201,168,76,.4);z-index:1}
+.sc-arc.two{right:-140px;top:-140px;width:420px;height:420px;border-color:rgba(201,168,76,.22)}
+.sc-card{
+  margin-top:auto;border-radius:var(--r-md);background:rgba(251,247,240,.96);color:var(--ink);
+  padding:20px;box-shadow:0 20px 44px -22px rgba(5,30,24,.6);
+}
+.sc-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.sc-val{font-family:var(--serif);font-size:52px;line-height:.92;letter-spacing:-.03em}
+.sc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.sc-grid span{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.sc-grid b{font-family:var(--serif);font-size:19px;font-weight:400}
+.sc-note{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;color:var(--on-dark-3);text-align:right}
+
+/* ---------- sections ---------- */
+section.sec{padding-block:clamp(56px,7.6vw,118px)}
+section.tint{background:linear-gradient(180deg, rgba(244,236,224,0), rgba(244,236,224,.9) 12%, rgba(244,236,224,.9) 88%, rgba(244,236,224,0))}
+.sec-head{margin-bottom:clamp(28px,3.8vw,46px)}
+.sec-head .eyebrow{display:block;margin-bottom:16px}
+.sec-head h2{font-size:clamp(30px,4.8vw,54px);max-width:18ch}
+.sec-head h2 em{font-style:italic;color:var(--emerald)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(26px,4vw,64px);align-items:start}
+.caps{margin-top:30px;display:grid;gap:2px}
+.caps li{display:grid;grid-template-columns:118px minmax(0,1fr);gap:6px 26px;padding:16px 0;border-top:1px solid rgba(228,215,196,.8)}
+.caps li:last-child{border-bottom:1px solid rgba(228,215,196,.8)}
+.caps .k{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink);padding-top:5px}
+.caps .v{color:var(--ink-2);font-size:15.5px}
+.profile{padding:clamp(24px,2.8vw,32px)}
+.prow{padding:15px 0;border-bottom:1px solid rgba(228,215,196,.75)}
+.prow:last-child{border-bottom:none;padding-bottom:0}
+.prow dt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
+.prow dd{margin:0;font-family:var(--serif);font-size:17px}
+.prow dd small{display:block;font-family:var(--sans);font-size:13.5px;color:var(--ink-2);margin-top:3px}
+.tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
+.tag{display:inline-flex;align-items:center;min-height:30px;padding:0 13px;border-radius:999px;font-size:11.5px;letter-spacing:.08em;border:1px solid var(--sand);color:var(--ink-2);background:rgba(255,255,255,.55)}
+.tag-em{border-color:rgba(15,91,76,.3);color:var(--emerald);background:rgba(15,91,76,.07)}
+
+/* experience */
+.xp{padding:clamp(26px,3.2vw,40px);margin-bottom:clamp(16px,2vw,24px)}
+.xp-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 20px;padding-bottom:18px;border-bottom:1px solid rgba(228,215,196,.85)}
+.xp-head h3{font-size:clamp(23px,3vw,33px)}
+.xp-head .role{font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.8vw,19px);color:var(--emerald)}
+.xp-head .dates{margin-left:auto;font-family:var(--mono);font-size:11px;letter-spacing:.07em;color:var(--ink-3);white-space:nowrap}
+.xp-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(22px,3.2vw,52px);margin-top:24px;align-items:start}
+.now{display:inline-flex;align-items:center;gap:9px;min-height:30px;padding:0 14px;border-radius:999px;background:rgba(15,91,76,.08);border:1px solid rgba(15,91,76,.24);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--emerald)}
+.now i{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:bl 2.4s ease-in-out infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.25}}
+.numlist{display:grid;gap:2px;margin-top:6px}
+.numlist li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:16px;padding:14px 0;border-top:1px solid rgba(228,215,196,.8)}
+.numlist li:last-child{border-bottom:1px solid rgba(228,215,196,.8)}
+.numlist .i{font-family:var(--serif);font-size:15px;color:var(--gold-ink);padding-top:2px}
+.numlist .t{font-size:15.5px;color:var(--ink-2)}
+.numlist .t b{color:var(--ink);font-weight:400;font-family:var(--serif);font-size:16.5px}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:8px 11px;margin-top:12px}
+.chain span{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);background:rgba(255,255,255,.7);border:1px solid var(--sand);border-radius:999px;min-height:30px;display:inline-flex;align-items:center;padding:0 13px}
+.chain i{font-style:normal;color:var(--gold);font-size:12px}
+.tools{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
+.meter-k{display:flex;justify-content:space-between;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px}
+.meter-k b{color:var(--ink);font-family:var(--serif);font-size:15px;letter-spacing:0;text-transform:none}
+.meter{height:4px;border-radius:3px;background:var(--sand-soft);overflow:hidden}
+.meter i{display:block;height:100%;border-radius:3px}
+
+.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:26px}
+.fig{border-radius:var(--r-md);padding:22px 20px;background:linear-gradient(165deg,#F8F1E6,#F0E5D4);border:1px solid rgba(220,204,180,.8)}
+.fig b{display:block;font-family:var(--serif);font-size:clamp(30px,4.4vw,46px);font-weight:400;letter-spacing:-.025em;line-height:1}
+.fig span{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-top:12px;line-height:1.7}
+.fig.key{background:linear-gradient(160deg,#15523F,#0A4034);border-color:transparent;box-shadow:var(--shadow-sm)}
+.fig.key b{color:var(--gold)}
+.fig.key span{color:var(--on-dark-3)}
+
+/* projects */
+.proj-panel{padding:clamp(22px,3vw,38px)}
+.proj-top{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);gap:clamp(22px,3.4vw,54px);align-items:end;padding-bottom:24px;border-bottom:1px solid rgba(228,215,196,.85)}
+.proj-title{font-size:clamp(27px,4.2vw,46px)}
+.ctl{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;padding-block:20px;border-bottom:1px solid rgba(228,215,196,.7)}
+.ctl .eyebrow{flex:none}
+.chipset{display:flex;flex-wrap:wrap;gap:8px}
+.chipset button{
+  min-height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--sand);
+  font-size:12px;letter-spacing:.07em;color:var(--ink-2);background:rgba(255,255,255,.6);transition:.22s;
+}
+.chipset button:hover{border-color:var(--gold);color:var(--ink)}
+.chipset button[aria-pressed="true"]{background:var(--emerald);border-color:var(--emerald);color:var(--cream)}
+
+.dash-grid{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(20px,3vw,46px);padding-top:28px}
+.read{display:flex;align-items:baseline;gap:12px}
+.read .v{font-family:var(--serif);font-size:clamp(60px,8.4vw,92px);line-height:.9;letter-spacing:-.035em}
+.read .u{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+.bandline{display:inline-flex;align-items:center;gap:9px;min-height:34px;padding:0 15px;border-radius:999px;margin-top:16px;border:1px solid currentColor;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.bandline i{width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
+.advice{margin-top:16px;font-size:14.5px;color:var(--ink-2);line-height:1.65}
+.warn{margin-top:18px;border-radius:var(--r-sm);padding:14px 16px;border:1px solid}
+.warn b{display:block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px}
+.warn p{font-size:13.5px;color:var(--ink-2);line-height:1.6}
+
+.ptable{width:100%;border-collapse:collapse;margin-bottom:26px}
+.ptable th{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:400;text-align:left;padding:0 0 10px;border-bottom:1px solid var(--line)}
+.ptable td{padding:11px 0;border-bottom:1px solid rgba(228,215,196,.6);font-size:14.5px}
+.ptable td.nm{font-size:12.5px;letter-spacing:.09em;color:var(--ink-2);width:78px}
+.ptable td.val{font-family:var(--serif);font-size:21px;width:92px}
+.ptable td.bar{padding-left:18px}
+.ptable .bt{height:4px;border-radius:3px;background:var(--sand-soft);display:block;overflow:hidden}
+.ptable .bt i{display:block;height:100%;border-radius:3px;transition:width .35s ease}
+
+.chart-top{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.chart-top h4{font-size:19px}
+.chart-top span{font-family:var(--mono);font-size:10px;letter-spacing:.07em;color:var(--ink-3)}
+#trend{touch-action:pan-y;cursor:crosshair;display:block;width:100%;height:auto;margin-top:14px}
+.scrub{display:flex;align-items:center;gap:16px;margin-top:14px;padding-top:16px;border-top:1px solid rgba(228,215,196,.7);flex-wrap:wrap}
+.scrub label{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+.scrub input[type=range]{flex:1;min-width:160px;accent-color:var(--emerald);height:30px;background:none}
+.scrub output{font-family:var(--serif);font-size:17px;color:var(--emerald);min-width:62px;text-align:right}
+
+.sk{background:var(--sand-soft);display:block;border-radius:6px}
+.sk.anim{background:linear-gradient(90deg,var(--sand-soft) 25%,#E2D3BC 50%,var(--sand-soft) 75%);background-size:260% 100%;animation:sh 1.5s linear infinite}
+@keyframes sh{to{background-position:-260% 0}}
+.errbox{padding:46px 0;display:grid;gap:16px;justify-items:start;max-width:46ch}
+.errbox h4{font-size:26px}
+
+.feat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px}
+.feat div{border-radius:var(--r-md);padding:22px;background:linear-gradient(170deg,#FAF4EA,#F3EADC);border:1px solid rgba(226,213,194,.8)}
+.feat h5{font-size:17px;margin-bottom:8px}
+.feat p{font-size:14px;color:var(--ink-2);line-height:1.6}
+
+/* ML cards */
+.ml{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
+.ml article{border-radius:var(--r);background:#FFFDF9;border:1px solid rgba(228,215,196,.85);box-shadow:var(--shadow-sm);overflow:hidden;display:flex;flex-direction:column}
+.ml .stage{padding:20px;background:linear-gradient(168deg,#F7F0E4,#EFE4D3);border-bottom:1px solid rgba(226,213,194,.9);min-height:186px}
+.ml .inner{padding:22px;display:flex;flex-direction:column;gap:11px;flex:1}
+.ml h4{font-size:21px}
+.ml p{font-size:14.5px;color:var(--ink-2);line-height:1.6}
+.ml .foot{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-top:12px;border-top:1px solid rgba(228,215,196,.8)}
+
+#spamIn{width:100%;min-height:76px;resize:vertical;background:rgba(255,255,255,.85);border:1px solid var(--sand);border-radius:var(--r-sm);padding:11px 13px;font-family:var(--mono);font-size:12px;line-height:1.65;color:var(--ink)}
+.spam-out{font-family:var(--mono);font-size:11.5px;line-height:2.05;margin-top:12px;word-break:break-word}
+.spam-out b{font-weight:400;color:var(--ink-3)}
+.spam-out mark{background:rgba(180,68,47,.1);color:var(--b-bad);border-radius:4px;padding:1px 4px}
+.verdict{display:flex;align-items:center;gap:12px;margin-top:12px}
+.verdict .vt{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+.verdict .vm{flex:1;height:4px;border-radius:3px;background:var(--sand-soft);overflow:hidden;min-width:36px}
+.verdict .vm i{display:block;height:100%;border-radius:3px;transition:width .3s ease}
+#leafStage{cursor:crosshair;touch-action:pan-y;display:block;width:100%;height:auto}
+.readout{display:flex;justify-content:space-between;gap:12px;margin-top:10px;font-family:var(--mono);font-size:9.5px;letter-spacing:.07em;color:var(--ink-3)}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.skcol{border-radius:var(--r);padding:26px 24px;background:#FFFDF9;border:1px solid rgba(228,215,196,.85);box-shadow:var(--shadow-sm)}
+.skcol.soft{background:none;border-style:dashed;box-shadow:none}
+.skcol h3{font-size:19px}
+.skcol .cap{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-top:6px}
+.skcol .tagrow{margin-top:18px}
+a.tag{text-decoration:none;transition:.22s}
+a.tag:hover{border-color:var(--gold);color:var(--emerald)}
+.skcol.soft .tag{border-style:dashed;color:var(--ink-3);background:none}
+
+/* leadership */
+.lead-grid{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:clamp(24px,3.6vw,56px);align-items:start}
+.bigpanel{padding:clamp(26px,3.2vw,38px)}
+.bignum{font-family:var(--serif);font-size:clamp(50px,8vw,92px);line-height:.92;letter-spacing:-.03em;color:var(--gold)}
+.rows{display:grid;gap:2px}
+.rows li{display:grid;grid-template-columns:106px minmax(0,1fr);gap:5px 22px;padding:16px 0;border-top:1px solid rgba(228,215,196,.8)}
+.rows li:last-child{border-bottom:1px solid rgba(228,215,196,.8)}
+.rows .yr{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink);padding-top:5px}
+.rows .ti{font-family:var(--serif);font-size:17.5px}
+.rows .de{font-size:14.5px;color:var(--ink-2);margin-top:4px}
+
+/* contact */
+.contact-panel{padding:clamp(30px,4.6vw,66px)}
+.contact-panel h2{font-size:clamp(32px,5.4vw,60px);max-width:14ch}
+.contact-panel h2 em{font-style:italic;color:var(--gold)}
+.contact-panel .lead{color:var(--on-dark-2)}
+.crows{margin-top:clamp(26px,3.4vw,42px)}
+.crow{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:10px 24px;align-items:center;padding:16px 0;border-top:1px solid var(--dark-line)}
+.crow:last-child{border-bottom:1px solid var(--dark-line)}
+.crow .k{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--on-dark-3)}
+.crow .v{font-family:var(--serif);font-size:clamp(17px,2.1vw,22px);word-break:break-word;min-width:0}
+a.v{text-decoration:none;border-bottom:1px solid var(--dark-line);transition:.22s}
+a.v:hover{color:var(--gold);border-color:var(--gold)}
+.cp{min-height:36px;padding:0 15px;border-radius:999px;border:1px solid var(--dark-line);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-3);white-space:nowrap;transition:.22s}
+.cp:hover{color:var(--gold);border-color:var(--gold)}
+
+footer{padding-block:40px 52px;margin-top:clamp(40px,5vw,70px);border-top:1px solid var(--line)}
+.colophon{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 40px}
+.colophon p{font-size:12px;line-height:2;color:var(--ink-3);letter-spacing:.04em}
+.colophon b{color:var(--ink-2);font-weight:400;font-family:var(--serif);font-size:14px}
+.colophon a{color:var(--emerald);text-decoration:none;border-bottom:1px solid var(--sand)}
+
+/* résumé sheet */
+#sheet{
+  position:fixed;inset:0;z-index:80;display:flex;flex-direction:column;align-items:center;
+  background:rgba(34,28,22,.55);backdrop-filter:blur(6px);
+  padding:calc(env(safe-area-inset-top,0px) + 16px) var(--gr) calc(env(safe-area-inset-bottom,0px) + 16px) var(--gl);
+  overflow-y:auto;overscroll-behavior:contain;
+}
+#sheet[hidden]{display:none}
+.sheet-in{
+  width:100%;max-width:780px;border-radius:var(--r);background:#FFFDF9;
+  box-shadow:0 40px 90px -40px rgba(20,14,8,.7);border:1px solid rgba(228,215,196,.9);
+  padding:clamp(24px,4vw,46px);margin:auto;
+}
+.sheet-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.sheet-bar .eyebrow{flex:none}
+.sheet-close{min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--sand);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);margin-left:auto}
+.sheet-close:hover{border-color:var(--gold);color:var(--ink)}
+.cv h3{font-size:clamp(26px,4vw,38px);margin-top:24px}
+.cv .cv-contact{font-size:13.5px;color:var(--ink-2);margin-top:10px;line-height:1.9;word-break:break-word}
+.cv h4{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-ink);font-family:var(--sans);font-weight:400;margin-top:30px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.cv p.sum{font-size:15px;color:var(--ink-2);margin-top:14px;line-height:1.72}
+.cv .job{margin-top:18px}
+.cv .job-h{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+.cv .job-h b{font-family:var(--serif);font-size:18px;font-weight:400}
+.cv .job-h span{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-left:auto;white-space:nowrap}
+.cv ul{margin-top:8px;display:grid;gap:7px}
+.cv ul li{display:grid;grid-template-columns:14px minmax(0,1fr);gap:10px;font-size:14.5px;color:var(--ink-2);line-height:1.6}
+.cv ul li::before{content:"—";color:var(--gold);font-size:12px;line-height:1.9}
+.cv .kv{margin-top:14px;display:grid;gap:9px}
+.cv .kv div{display:grid;grid-template-columns:140px minmax(0,1fr);gap:6px 18px;font-size:14.5px;color:var(--ink-2)}
+.cv .kv dt{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);padding-top:4px}
+.sheet-foot{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+@media (max-width:640px){
+  .cv .kv div{grid-template-columns:minmax(0,1fr)}
+  .cv .job-h span{margin-left:0;width:100%}
+}
+
+/* responsive */
+@media (max-width:1020px){
+  .hero-grid,.about,.xp-body,.lead-grid,.proj-top,.dash-grid{grid-template-columns:minmax(0,1fr)}
+  .ml,.feat,.skills{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:820px){
+  .bar-nav,.bar-cta{display:none}
+  .menu-btn{display:inline-flex}
+}
+@media (min-width:821px){#overlay{display:none!important}}
+@media (max-width:640px){
+  :root{--r:22px;--r-md:16px}
+  .figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ml,.feat,.skills{grid-template-columns:minmax(0,1fr)}
+  .caps li,.rows li{grid-template-columns:minmax(0,1fr)}
+  .crow{grid-template-columns:minmax(0,1fr) auto}
+  .crow .k{grid-column:1/-1}
+  .xp-head .dates{margin-left:0;width:100%}
+  .showcase{min-height:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  html{scroll-behavior:auto}
+}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+</style>
+
+<header class="bar">
+  <div class="page bar-in">
+    <a class="brand" href="#top">
+      <span class="mono-mark" aria-hidden="true">LJ</span>
+      <span class="brand-nm">Linza Sara Johnson</span>
+    </a>
+    <nav class="bar-nav" id="dnav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="pill pill-out bar-cta" data-resume href="Linza-Sara-Johnson-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="overlay">
+      Menu <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<div id="overlay" hidden role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="ov-top">
+    <span class="eyebrow muted">Linza Sara Johnson</span>
+    <button class="ov-close" id="ovClose">Close <span aria-hidden="true" style="font-size:16px">✕</span></button>
+  </div>
+  <nav class="ov-list" aria-label="Sections">
+    <a href="#about"><span class="n">01</span><span class="t">About</span><span class="d">Who I am</span></a>
+    <a href="#experience"><span class="n">02</span><span class="t">Experience</span><span class="d">Internships</span></a>
+    <a href="#projects"><span class="n">03</span><span class="t">Projects</span><span class="d">AQI · ML</span></a>
+    <a href="#skills"><span class="n">04</span><span class="t">Skills</span><span class="d">Stack</span></a>
+    <a href="#leadership"><span class="n">05</span><span class="t">Leadership</span><span class="d">Awards</span></a>
+    <a href="#contact"><span class="n">06</span><span class="t">Contact</span><span class="d">Say hello</span></a>
+  </nav>
+  <div class="ov-foot">
+    <a class="pill pill-solid" data-resume href="Linza-Sara-Johnson-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+    <a class="pill pill-out" href="mailto:linzasarajohnson789@gmail.com">Email me</a>
+  </div>
+</div>
+
+<div id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <div class="sheet-in">
+    <div class="sheet-bar">
+      <p class="eyebrow" id="sheetTitle">Résumé</p>
+      <a class="pill pill-solid" data-pdf style="min-height:40px;padding:0 20px;font-size:12.5px"
+         href="Linza-Sara-Johnson-Resume.pdf" target="_blank" rel="noopener" download><span class="lbl">Download PDF ↓</span></a>
+      <button class="sheet-close" id="sheetClose">Close ✕</button>
+    </div>
+
+    <div class="cv">
+      <h3>Linza Sara Johnson</h3>
+      <p class="cv-contact">
+        Bangalore, India · +91 98940 57611 · linzasarajohnson789@gmail.com<br>
+        linkedin.com/in/linza-sara-639388306 · github.com/Linza20
+      </p>
+
+      <h4>Professional summary</h4>
+      <p class="sum">
+        Computer Science student and web developer who builds and maintains websites and web applications
+        end to end in clean HTML, CSS and JavaScript. Design concepts converted into working interfaces,
+        cross-browser debugging, and pages optimised for performance and responsiveness. Built a React
+        dashboard on a live REST API and an interactive data visualisation tool during a professional
+        development internship. Independent, self-organised, and quick to pick up an unfamiliar part of
+        the stack.
+      </p>
+
+      <h4>Education</h4>
+      <div class="job">
+        <div class="job-h">
+          <b>B.Tech, Computer Science (Artificial Intelligence &amp; Machine Learning)</b>
+          <span>Expected May 2027</span>
+        </div>
+        <p class="cv-contact" style="margin-top:4px">Christ (Deemed to be) University</p>
+      </div>
+
+      <h4>Technical skills</h4>
+      <dl class="kv">
+        <div><dt>Frontend</dt><dd>HTML5, CSS3, JavaScript (ES6+), React, responsive web design, mobile-first layout, cross-browser compatibility, UI implementation, frontend debugging</dd></div>
+        <div><dt>Backend &amp; database</dt><dd>SQL, DBMS, Python, REST API integration</dd></div>
+        <div><dt>Tools &amp; version control</dt><dd>Git, GitHub, Chrome DevTools, Visual Studio Code</dd></div>
+        <div><dt>Methodologies</dt><dd>Agile, Scrum, website testing, performance optimisation, cross-functional collaboration</dd></div>
+        <div><dt>Currently learning</dt><dd>Bootstrap, jQuery, PHP, MySQL, WordPress</dd></div>
+      </dl>
+
+      <h4>Professional experience</h4>
+      <div class="job">
+        <div class="job-h"><b>Product Management Intern — Bosscoder School of Technology</b><span>Aug 2026 – Oct 2026</span></div>
+        <ul><li>Worked with designers and developers on product discovery and feature planning, translating concepts into clear requirements the development team implemented.</li></ul>
+      </div>
+      <div class="job">
+        <div class="job-h"><b>Python Developer Intern — Cognifyz Technology</b><span>Mar 2026 – Apr 2026</span></div>
+        <ul>
+          <li>Developed a data visualisation tool using Plotly and Matplotlib that converted raw datasets into interactive, presentation-ready charts.</li>
+          <li>Built a web scraping tool with BeautifulSoup that parsed live HTML and XML from production websites, handling malformed and inconsistent markup.</li>
+          <li>Automated a repetitive data-processing workflow in Python, reducing manual effort on a recurring task.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-h"><b>Business Analysis Intern — Litz Internship</b><span>Apr 2025 – May 2025</span></div>
+        <ul>
+          <li>Analysed 12 months of CRM, product usage and support data to explain a 22 percent annual customer churn rate and identify four key drivers.</li>
+          <li>Built a predictive churn model with 85 percent accuracy and 0.89 AUC to flag at-risk accounts, and delivered retention recommendations projected to protect approximately 1.2 million USD in annual recurring revenue.</li>
+        </ul>
+      </div>
+
+      <h4>Projects</h4>
+      <div class="job">
+        <div class="job-h"><b>AQI Monitoring Web Application</b><span>React, JavaScript, CSS, REST API</span></div>
+        <ul>
+          <li>Built a real-time air quality dashboard that fetches live data from a public REST API and renders current AQI, pollutant breakdown and historical trend charts.</li>
+          <li>Implemented an automated alert component that flags readings above safe thresholds, with conditional styling driven by the AQI band.</li>
+          <li>Designed a mobile-first responsive layout tested across Chrome, Firefox and Edge, handling loading and error states so the interface degrades gracefully on API failure.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-h"><b>Machine Learning Classification Projects</b><span>Python, NLP, CNN</span></div>
+        <ul><li>Built email spam and phishing detection, arrhythmia detection and leaf venation classification models across text, signal and image data.</li></ul>
+      </div>
+
+      <h4>Certifications</h4>
+      <p class="sum" style="margin-top:12px">Agile Scrum in Practice, Infosys · Principles of Generative AI, Infosys · AI Primer, Infosys</p>
+
+      <h4>Leadership and activities</h4>
+      <p class="sum" style="margin-top:12px">
+        Interschool Debate: Winner and Best Speaker · School Head Girl, 2022 to 2023 · Vice Secretary,
+        Student Rotary Club, Coonoor, 2021 to 2023 · Coordinated over 100 volunteers on an NGO rural
+        employment initiative.
+      </p>
+    </div>
+
+    <div class="sheet-foot">
+      <a class="pill pill-solid" data-pdf href="Linza-Sara-Johnson-Resume.pdf" target="_blank" rel="noopener" download><span class="lbl">Download PDF ↓</span></a>
+      <a class="pill pill-out" href="mailto:linzasarajohnson789@gmail.com">Email me</a>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="page hero">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">Frontend &amp; Software Developer · Bengaluru</p>
+
+      <h1 id="nameplate" aria-label="Linza Sara Johnson">
+        <span class="ln" data-text="Linza Sara" aria-hidden="true"></span>
+        <span class="ln it" data-text="Johnson" aria-hidden="true"></span>
+      </h1>
+
+      <p class="lead prose">
+        I build web interfaces and the data tooling behind them: React applications on live REST APIs,
+        Python tools that turn raw datasets into readable charts, and classification models across text,
+        signal and image data.
+      </p>
+
+      <div class="hero-actions">
+        <a class="pill pill-solid" href="#projects">Explore the work
+          <span aria-hidden="true">→</span></a>
+        <a class="pill pill-out" data-resume href="Linza-Sara-Johnson-Resume.pdf" target="_blank" rel="noopener">Read my résumé</a>
+      </div>
+
+      <p class="hero-mail">
+        <span class="eyebrow muted">Email</span>
+        <a class="ulink" href="mailto:linzasarajohnson789@gmail.com">linzasarajohnson789@gmail.com</a>
+      </p>
+
+      <dl class="hero-facts">
+        <div><dt>Degree</dt><dd>B.Tech CSE (AI &amp; ML)</dd></div>
+        <div><dt>University</dt><dd>Christ University</dd></div>
+        <div><dt>Graduating</dt><dd class="tnum">May 2027</dd></div>
+      </dl>
+    </div>
+
+    <div class="panel-dark showcase">
+      <span class="sc-arc" aria-hidden="true"></span>
+      <span class="sc-arc two" aria-hidden="true"></span>
+      <div class="showcase-top">
+        <p class="eyebrow">Featured build</p>
+        <p class="sc-note" style="margin-left:auto">Demonstration data</p>
+      </div>
+      <h3 style="font-size:clamp(24px,3vw,32px);max-width:12ch;color:var(--on-dark)">
+        AQI Monitoring <em style="font-style:italic;color:var(--gold)">Dashboard</em>
+      </h3>
+      <p style="font-size:14px;color:var(--on-dark-2);max-width:34ch;font-weight:300">
+        Live air quality on a public REST API. One value drives the colour, the advice and the alert.
+      </p>
+
+      <div class="sc-card">
+        <div class="sc-head">
+          <div>
+            <p class="eyebrow muted" style="margin-bottom:6px">Current index</p>
+            <p class="sc-val tnum" id="hvVal" style="color:var(--b-mod)">86</p>
+          </div>
+          <svg id="heroSpark" viewBox="0 0 150 54" width="150" height="54" role="img"
+               aria-label="Illustrative twelve-hour air quality trend." style="flex:none"></svg>
+        </div>
+        <div class="sc-grid">
+          <div><span>PM2.5</span><b class="tnum">38</b></div>
+          <div><span>PM10</span><b class="tnum">71</b></div>
+          <div><span>NO₂</span><b class="tnum">24</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="sec tint" id="about">
+  <div class="page">
+    <div class="sec-head">
+      <p class="eyebrow">01 — About</p>
+      <h2>A Computer Science student who starts from <em>the data</em>, then builds the interface.</h2>
+    </div>
+
+    <div class="about">
+      <div>
+        <p class="body prose">
+          I am in my B.Tech in Computer Science, specialising in Artificial Intelligence and Machine
+          Learning, at Christ University in Bangalore. Most of my work has been web development: building
+          and maintaining sites and applications end to end in HTML, CSS and JavaScript, turning design
+          concepts into working interfaces, debugging across browsers, and keeping pages responsive and fast.
+        </p>
+        <p class="body prose">
+          During a professional development internship I built a React dashboard on a live REST API and an
+          interactive data visualisation tool. The business analysis internship before it taught me to read
+          the numbers first: twelve months of CRM, usage and support data, read carefully enough to explain
+          why customers were leaving.
+        </p>
+
+        <ul class="caps">
+          <li><span class="k">Interfaces</span><span class="v">Responsive, mobile-first screens, tested in Chrome, Firefox and Edge.</span></li>
+          <li><span class="k">APIs</span><span class="v">REST integration that accounts for the loading and failure paths, not only the response.</span></li>
+          <li><span class="k">Python</span><span class="v">Analysis, automation of recurring workflows, and charts built to be presented.</span></li>
+          <li><span class="k">Machine learning</span><span class="v">Classification projects across text, signal and image data.</span></li>
+          <li><span class="k">Product</span><span class="v">Discovery and requirements work, the other side of the handoff I usually receive.</span></li>
+        </ul>
+      </div>
+
+      <aside class="panel profile">
+        <p class="eyebrow muted">Profile</p>
+        <dl style="margin-top:16px">
+          <div class="prow"><dt>University</dt><dd>Christ (Deemed to be) University<small>Bangalore, India</small></dd></div>
+          <div class="prow"><dt>Degree</dt><dd>B.Tech, Computer Science<small>Artificial Intelligence &amp; Machine Learning</small></dd></div>
+          <div class="prow"><dt>Graduation</dt><dd class="tnum">Expected May 2027</dd></div>
+          <div class="prow">
+            <dt>Core technologies</dt>
+            <dd><div class="tagrow">
+              <span class="tag tag-em">React</span><span class="tag tag-em">JavaScript</span>
+              <span class="tag tag-em">Python</span><span class="tag">HTML5</span>
+              <span class="tag">CSS3</span><span class="tag">SQL</span><span class="tag">REST APIs</span><span class="tag">Git</span>
+            </div></dd>
+          </div>
+          <div class="prow">
+            <dt>Certified</dt>
+            <dd><div class="tagrow">
+              <span class="tag">Agile Scrum in Practice</span><span class="tag">Principles of Generative AI</span><span class="tag">AI Primer</span>
+            </div></dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section class="sec" id="experience">
+  <div class="page">
+    <div class="sec-head">
+      <p class="eyebrow">02 — Experience</p>
+      <h2>Product planning, Python engineering, <em>business analysis</em>.</h2>
+    </div>
+
+    <article class="panel xp">
+      <div class="xp-head">
+        <h3>Bosscoder School of Technology</h3>
+        <p class="role">Product Management Intern</p>
+        <p class="dates tnum">Aug 2026 — Oct 2026</p>
+      </div>
+      <div class="xp-body">
+        <div>
+          <p class="now"><i aria-hidden="true"></i>Currently here</p>
+          <p class="body" style="margin-top:16px">
+            I work with designers and developers on product discovery and feature planning, translating
+            concepts into clear requirements the development team implements.
+          </p>
+          <p class="body">
+            The value sits in the translation. An idea that sounds obvious in a discussion is rarely
+            specific enough to build from, and that gap is where features go wrong. It has made me a better
+            engineer: I ask what a user is trying to do before I ask what the component should render.
+          </p>
+          <div class="tools">
+            <span class="tag">Product discovery</span><span class="tag">Requirements</span>
+            <span class="tag">Agile / Scrum</span><span class="tag">Cross-functional</span>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow muted">The sequence</p>
+          <div class="chain">
+            <span>Discovery</span><i aria-hidden="true">→</i>
+            <span>Feature planning</span><i aria-hidden="true">→</i>
+            <span>Requirements</span><i aria-hidden="true">→</i>
+            <span>Handoff</span>
+          </div>
+          <p class="body" style="margin-top:22px">
+            Each step narrows something: a need becomes a scope, a scope becomes a written requirement, a
+            requirement becomes work a team can pick up without asking what was meant.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel xp">
+      <div class="xp-head">
+        <h3>Cognifyz Technology</h3>
+        <p class="role">Python Developer Intern</p>
+        <p class="dates tnum">Mar 2026 — Apr 2026</p>
+      </div>
+      <div class="xp-body">
+        <div>
+          <p class="body">
+            Three pieces of tooling, all concerned with getting data out of an awkward source and into a
+            form someone could use.
+          </p>
+          <ol class="numlist">
+            <li><span class="i">01</span><span class="t"><b>Data visualisation tool.</b> Built with Plotly and Matplotlib to convert raw datasets into interactive, presentation-ready charts.</span></li>
+            <li><span class="i">02</span><span class="t"><b>Web scraping tool.</b> Built with BeautifulSoup to parse live HTML and XML from production websites, handling malformed and inconsistent markup.</span></li>
+            <li><span class="i">03</span><span class="t"><b>Workflow automation.</b> Automated a repetitive data-processing workflow in Python, reducing manual effort on a recurring task.</span></li>
+          </ol>
+          <div class="tools">
+            <span class="tag tag-em">Python</span><span class="tag">Plotly</span>
+            <span class="tag">Matplotlib</span><span class="tag">BeautifulSoup</span>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow muted">The sequence</p>
+          <div class="chain">
+            <span>Ingest</span><i aria-hidden="true">→</i><span>Process</span><i aria-hidden="true">→</i>
+            <span>Visualise</span><i aria-hidden="true">→</i><span>Automate</span>
+          </div>
+          <div style="margin-top:24px">
+            <p class="eyebrow muted">Representative output</p>
+            <svg id="xpChart" viewBox="0 0 420 150" width="100%" height="150" style="margin-top:14px;height:auto" role="img"
+                 aria-label="Illustrative chart in the style of the visualisation tool's output."></svg>
+            <p class="note" style="margin-top:10px">Illustrative of the chart style, not data from the original tool.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel xp">
+      <div class="xp-head">
+        <h3>Litz Internship</h3>
+        <p class="role">Business Analysis Intern</p>
+        <p class="dates tnum">Apr 2025 — May 2025</p>
+      </div>
+      <div class="xp-body">
+        <div>
+          <p class="body">
+            A customer retention study. I analysed twelve months of CRM, product usage and support data to
+            explain a 22 percent annual churn rate and identify four key drivers behind it, then built a
+            predictive model to flag at-risk accounts before they left.
+          </p>
+          <p class="body">
+            The retention recommendations were projected to protect roughly 1.2 million US dollars in
+            annual recurring revenue. That figure is a projection attached to the plan, not revenue realised.
+          </p>
+          <div class="tools">
+            <span class="tag tag-em">Churn analysis</span><span class="tag">CRM data</span>
+            <span class="tag">Predictive modelling</span><span class="tag">Retention strategy</span>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow muted">The sequence</p>
+          <div class="chain">
+            <span>CRM data</span><i aria-hidden="true">→</i><span>Analysis</span><i aria-hidden="true">→</i>
+            <span>Drivers</span><i aria-hidden="true">→</i><span>Model</span><i aria-hidden="true">→</i>
+            <span>Retention plan</span>
+          </div>
+          <div style="margin-top:26px;display:grid;gap:18px">
+            <div>
+              <p class="meter-k"><span>Model accuracy</span><b class="tnum">85%</b></p>
+              <div class="meter"><i style="width:85%;background:var(--emerald)"></i></div>
+            </div>
+            <div>
+              <p class="meter-k"><span>Model AUC</span><b class="tnum">0.89</b></p>
+              <div class="meter"><i style="width:89%;background:var(--gold)"></i></div>
+            </div>
+          </div>
+          <p class="note" style="margin-top:16px">
+            Figures as stated on my résumé. Model family, validation method, dataset size and deployment
+            status are not claimed here.
+          </p>
+        </div>
+      </div>
+
+      <div class="figs">
+        <div class="fig"><b class="tnum">12</b><span>Months of CRM,<br>usage &amp; support data</span></div>
+        <div class="fig key"><b class="tnum">22%</b><span>Annual churn<br>rate analysed</span></div>
+        <div class="fig"><b class="tnum">4</b><span>Key churn drivers<br>identified</span></div>
+        <div class="fig key"><b class="tnum">$1.2M</b><span>ARR projected to be<br>protected by the plan</span></div>
+      </div>
+      <p style="margin-top:18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <a class="todo" href="#contact">To add</a>
+        <span class="note">Name the four drivers once they can be shared.</span>
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="sec tint" id="projects">
+  <div class="page">
+    <div class="sec-head">
+      <p class="eyebrow">03 — Projects</p>
+      <h2>Built, and <em>handled properly</em> when the API fails.</h2>
+    </div>
+
+    <div class="panel proj-panel">
+      <div class="proj-top">
+        <div>
+          <p class="eyebrow" style="margin-bottom:14px">Web application</p>
+          <h3 class="proj-title">AQI Monitoring Web Application</h3>
+          <div class="tools">
+            <span class="tag tag-em">React</span><span class="tag">JavaScript</span>
+            <span class="tag">CSS</span><span class="tag">REST API</span>
+          </div>
+        </div>
+        <div>
+          <p class="body">
+            A real-time air quality dashboard on a public REST API, rendering current AQI, a pollutant
+            breakdown and historical trends. One number drives the whole interface: the band it falls into
+            decides the colour, the advice, the threshold line and whether an alert is raised.
+          </p>
+          <p style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px">
+            <a class="todo" href="#contact">Add repository</a>
+            <a class="todo" href="#contact">Add live demo</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="ctl">
+        <p class="eyebrow muted">Station</p>
+        <div class="chipset" id="stationBtns">
+          <button data-station="central" aria-pressed="true">Central</button>
+          <button data-station="peenya" aria-pressed="false">Peenya Industrial</button>
+          <button data-station="hebbal" aria-pressed="false">Hebbal</button>
+        </div>
+      </div>
+      <div class="ctl">
+        <p class="eyebrow muted">Response</p>
+        <div class="chipset" id="stateBtns">
+          <button data-state="live" aria-pressed="true">Data</button>
+          <button data-state="loading" aria-pressed="false">Loading</button>
+          <button data-state="error" aria-pressed="false">API error</button>
+        </div>
+        <p class="note" style="margin-left:auto">Demonstration data — not a live reading</p>
+      </div>
+
+      <div id="dashBody"></div>
+
+      <div class="feat">
+        <div>
+          <h5>Conditional band styling</h5>
+          <p>Drag the hour scrubber and one value redraws everything: reading, band, advice, pollutant bars
+             and the alert. That cascade is the actual logic of the project.</p>
+        </div>
+        <div>
+          <h5>Threshold alerting</h5>
+          <p>Cross AQI 100 on any station and the alert appears on its own, rather than leaving the viewer
+             to interpret the number.</p>
+        </div>
+        <div>
+          <h5>Graceful degradation</h5>
+          <p>Skeletons while the request is in flight and an explicit retry on failure, so a dead API still
+             produces a usable screen. Tested in Chrome, Firefox and Edge.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ML -->
+    <div style="margin-top:clamp(36px,4.6vw,64px)">
+      <div class="sec-head" style="margin-bottom:22px">
+        <p class="eyebrow">Machine learning</p>
+        <h2 style="font-size:clamp(24px,3.4vw,38px)">Classification across <em>three kinds of data</em>.</h2>
+      </div>
+      <p class="body prose" style="margin-bottom:8px">
+        What changes between these projects is not really the model, it is what a single training example
+        looks like. Each demonstration below runs in your browser as a simplified stand-in, not as the
+        trained model from the project.
+      </p>
+
+      <div class="ml">
+        <article>
+          <div class="stage">
+            <label class="eyebrow muted" for="spamIn" style="display:block;margin-bottom:10px">Try a message</label>
+            <textarea id="spamIn" spellcheck="false">Dear customer, verify your account within 24hrs or it will be suspended. Click here to confirm your password.</textarea>
+            <p class="spam-out" id="spamOut"></p>
+            <div class="verdict">
+              <span class="vt" id="spamVerdict">—</span>
+              <span class="vm"><i id="spamBar" style="width:0;background:var(--gold)"></i></span>
+              <span class="vt tnum" id="spamScore" style="color:var(--ink-3)">0</span>
+            </div>
+          </div>
+          <div class="inner">
+            <h4>Email spam &amp; phishing detection</h4>
+            <p>The input is unstructured text, so the work is turning language into features: tokens,
+               frequencies, and the phrasing that separates a real notice from a lure.</p>
+            <p class="note">Keyword heuristic for illustration. The project model is not running here.</p>
+            <div class="foot"><span class="tag">Text · NLP</span><a class="todo" href="#contact" style="margin-left:auto">Add repo</a></div>
+          </div>
+        </article>
+
+        <article>
+          <div class="stage">
+            <div class="chipset" id="ecgBtns" style="margin-bottom:12px">
+              <button data-rhythm="normal" aria-pressed="true">Normal sinus</button>
+              <button data-rhythm="irregular" aria-pressed="false">Irregular</button>
+            </div>
+            <svg id="ecg" viewBox="0 0 320 104" width="100%" height="104" preserveAspectRatio="none" role="img"
+                 aria-label="Stylised electrocardiogram trace. Switching to the irregular rhythm marks the anomalous beat."></svg>
+            <p class="readout"><span id="ecgRead">Regular R–R interval</span><span id="ecgFlag">No anomaly</span></p>
+          </div>
+          <div class="inner">
+            <h4>Arrhythmia detection</h4>
+            <p>Here one example is a waveform over time, so meaning lives in shape and rhythm: intervals,
+               amplitudes, and the beats that break the pattern rather than any single reading.</p>
+            <p class="note">Illustrative waveform drawn in the browser. Not patient data.</p>
+            <div class="foot"><span class="tag">Signal · time series</span><a class="todo" href="#contact" style="margin-left:auto">Add repo</a></div>
+          </div>
+        </article>
+
+        <article>
+          <div class="stage">
+            <p class="eyebrow muted" style="display:block;margin-bottom:10px">Move the receptive field</p>
+            <svg id="leafStage" viewBox="0 0 320 118" width="100%" height="118" tabindex="0" role="img"
+                 aria-label="Leaf venation diagram with a movable convolution patch. Use the arrow keys to move the patch."></svg>
+            <p class="readout"><span id="patchPos">patch 26×26</span><span id="patchDen">vein nodes —</span></p>
+          </div>
+          <div class="inner">
+            <h4>Leaf venation classification</h4>
+            <p>A grid of pixels where meaning is spatial, which is what makes a convolutional network the
+               natural fit: it reads a small window at a time and composes those readings upward.</p>
+            <p class="note">A single window moved by hand, standing in for a convolution pass.</p>
+            <div class="foot"><span class="tag">Image · CNN</span><a class="todo" href="#contact" style="margin-left:auto">Add repo</a></div>
+          </div>
+        </article>
+      </div>
+
+      <p class="note" style="margin-top:24px;max-width:60ch">
+        Datasets, architectures and evaluation results are deliberately not listed. I would rather link the
+        code than quote numbers I cannot show you.
+      </p>
+
+      <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+        <a class="pill pill-out" href="https://github.com/Linza20" target="_blank" rel="noopener">More work on GitHub ↗</a>
+        <span class="note">One open slot for another genuine project — better left empty than padded.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="sec" id="skills">
+  <div class="page">
+    <div class="sec-head">
+      <p class="eyebrow">04 — Skills</p>
+      <h2>Grouped by role, not ranked by <em>invented percentages</em>.</h2>
+    </div>
+
+    <div class="skills">
+      <div class="skcol">
+        <h3>Frontend</h3><span class="cap">Used in internships &amp; projects</span>
+        <div class="tagrow">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript ES6+</span>
+          <a class="tag tag-em" href="#projects">React ↗</a><span class="tag">Responsive design</span>
+          <span class="tag">Mobile-first</span><span class="tag">Cross-browser</span>
+          <span class="tag">UI implementation</span><span class="tag">Debugging</span>
+        </div>
+      </div>
+      <div class="skcol">
+        <h3>Backend &amp; data</h3><span class="cap">Used in internships &amp; projects</span>
+        <div class="tagrow">
+          <a class="tag tag-em" href="#experience">Python ↗</a><span class="tag">SQL</span>
+          <span class="tag">DBMS</span><a class="tag tag-em" href="#projects">REST APIs ↗</a>
+        </div>
+      </div>
+      <div class="skcol">
+        <h3>Tools</h3><span class="cap">Daily</span>
+        <div class="tagrow">
+          <span class="tag">Git</span>
+          <a class="tag" href="https://github.com/Linza20" target="_blank" rel="noopener">GitHub ↗</a>
+          <span class="tag">Chrome DevTools</span><span class="tag">VS Code</span>
+        </div>
+      </div>
+      <div class="skcol">
+        <h3>Methods</h3><span class="cap">Ways of working</span>
+        <div class="tagrow">
+          <span class="tag">Agile</span><span class="tag">Scrum</span><span class="tag">Website testing</span>
+          <span class="tag">Performance</span><span class="tag">Cross-functional work</span>
+        </div>
+      </div>
+      <div class="skcol">
+        <h3>AI &amp; machine learning</h3><span class="cap">Applied in project work</span>
+        <div class="tagrow">
+          <a class="tag tag-em" href="#projects">NLP ↗</a>
+          <a class="tag tag-em" href="#projects">CNNs ↗</a>
+          <a class="tag tag-em" href="#projects">Classification ↗</a>
+        </div>
+      </div>
+      <div class="skcol soft">
+        <h3 style="color:var(--ink-2)">Currently learning</h3><span class="cap">Not yet used in shipped work</span>
+        <div class="tagrow">
+          <span class="tag">Bootstrap</span><span class="tag">jQuery</span><span class="tag">PHP</span>
+          <span class="tag">MySQL</span><span class="tag">WordPress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LEADERSHIP ===================== -->
+<section class="sec tint" id="leadership">
+  <div class="page">
+    <div class="sec-head">
+      <p class="eyebrow">05 — Leadership &amp; certifications</p>
+      <h2>The part that <em>isn't code</em>.</h2>
+    </div>
+
+    <div class="lead-grid">
+      <div class="panel panel-sand bigpanel">
+        <p class="eyebrow muted">NGO rural employment initiative</p>
+        <p class="bignum tnum" style="margin-top:12px">100+</p>
+        <p class="body" style="margin-top:14px;max-width:34ch">
+          Volunteers coordinated. Scheduling, briefing and keeping a large group moving in one direction,
+          which is project management without the job title.
+        </p>
+        <hr style="border:0;height:1px;background:rgba(214,196,170,.8);margin-block:28px">
+        <p class="eyebrow muted">Certifications</p>
+        <ul class="rows" style="margin-top:12px">
+          <li><span class="yr">Infosys</span><span class="ti">Agile Scrum in Practice</span></li>
+          <li><span class="yr">Infosys</span><span class="ti">Principles of Generative AI</span></li>
+          <li><span class="yr">Infosys</span><span class="ti">AI Primer</span></li>
+        </ul>
+      </div>
+
+      <div class="panel bigpanel">
+        <p class="eyebrow muted">Leadership &amp; activities</p>
+        <ul class="rows" style="margin-top:12px">
+          <li><span class="yr tnum">2022–23</span><span><span class="ti">School Head Girl</span><span class="de">Elected to represent and lead the student body for the academic year.</span></span></li>
+          <li><span class="yr tnum">2021–23</span><span><span class="ti">Vice Secretary, Student Rotary Club</span><span class="de">Coonoor. Two years helping run the club's programme of student-led service work.</span></span></li>
+          <li><span class="yr">Award</span><span><span class="ti">Interschool Debate — Winner &amp; Best Speaker</span><span class="de">Holding a position clearly under time pressure, which transfers to design reviews.</span></span></li>
+          <li><span class="yr">Volunteering</span><span><span class="ti">NGO rural employment initiative</span><span class="de">Coordinated over 100 volunteers across the programme.</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="sec" id="contact" style="padding-top:clamp(30px,4vw,60px)">
+  <div class="page">
+    <div class="panel-dark contact-panel">
+      <span class="sc-arc" aria-hidden="true" style="right:-120px;top:-120px;width:420px;height:420px"></span>
+      <p class="eyebrow" style="color:var(--gold)">06 — Contact</p>
+      <h2 style="margin-top:16px">Tell me what <em>you're building</em>.</h2>
+      <p class="lead" style="margin-top:20px;max-width:52ch">
+        I am looking for frontend and software development roles and internships where I can work on real
+        products with people who care about the details. If you are hiring, reviewing, or want to read the
+        code behind any of this, I would be glad to hear from you.
+      </p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:30px">
+        <a class="pill pill-gold" href="mailto:linzasarajohnson789@gmail.com">Email me →</a>
+        <a class="pill pill-ghost-dark" data-resume href="Linza-Sara-Johnson-Resume.pdf" target="_blank" rel="noopener">Read my résumé</a>
+      </div>
+
+      <div class="crows">
+        <div class="crow">
+          <span class="k">Email</span>
+          <a class="v" href="mailto:linzasarajohnson789@gmail.com">linzasarajohnson789@gmail.com</a>
+          <button class="cp" data-copy="linzasarajohnson789@gmail.com">Copy</button>
+        </div>
+        <div class="crow">
+          <span class="k">LinkedIn</span>
+          <a class="v" href="https://linkedin.com/in/linza-sara-639388306" target="_blank" rel="noopener">linza-sara-639388306 ↗</a>
+          <button class="cp" data-copy="https://linkedin.com/in/linza-sara-639388306">Copy</button>
+        </div>
+        <div class="crow">
+          <span class="k">GitHub</span>
+          <a class="v" href="https://github.com/Linza20" target="_blank" rel="noopener">github.com/Linza20 ↗</a>
+          <button class="cp" data-copy="https://github.com/Linza20">Copy</button>
+        </div>
+        <div class="crow">
+          <span class="k">Phone</span>
+          <a class="v" href="tel:+919894057611">+91 98940 57611</a>
+          <button class="cp" data-copy="+919894057611">Copy</button>
+        </div>
+        <div class="crow">
+          <span class="k">Based in</span>
+          <span class="v">Bengaluru, India</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="page colophon">
+    <p><b>© <span id="yr">2026</span> Linza Sara Johnson</b><br>Bengaluru, India</p>
+    <p><b>Colophon</b><br>Set in Fraunces, Jost and IBM Plex Mono.<br>Built by hand in one HTML file.</p>
+    <p><b>B.Tech CSE (AI &amp; ML)</b><br>Christ (Deemed to be) University<br>Expected May 2027 · <a href="#top">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var NS = "http://www.w3.org/2000/svg";
+  function el(n, a) { var e = document.createElementNS(NS, n); for (var k in a) if (Object.prototype.hasOwnProperty.call(a, k)) e.setAttribute(k, a[k]); return e; }
+  function clear(n) { while (n && n.firstChild) n.removeChild(n.firstChild); }
+  function path(p) { return p.map(function (q, i) { return (i ? "L" : "M") + q[0].toFixed(1) + " " + q[1].toFixed(1); }).join(" "); }
+  function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
+
+  var yEl = document.getElementById("yr");
+  if (yEl) yEl.textContent = new Date().getFullYear();
+
+  /* ===== nameplate ===== */
+  (function nameplate() {
+    var plate = document.getElementById("nameplate");
+    if (!plate) return;
+    var chars = [];
+    Array.prototype.slice.call(plate.querySelectorAll(".ln")).forEach(function (line) {
+      var text = line.getAttribute("data-text") || "";
+      for (var i = 0; i < text.length; i++) {
+        if (text[i] === " ") { var sp = document.createElement("span"); sp.className = "sp"; line.appendChild(sp); continue; }
+        var s = document.createElement("span");
+        s.className = "ch"; s.textContent = text[i];
+        line.appendChild(s);
+        chars.push({ node: s, w: 400, target: 400, cx: 0, cy: 0 });
+      }
+    });
+    function measure() {
+      var pr = plate.getBoundingClientRect();
+      chars.forEach(function (c) {
+        var r = c.node.getBoundingClientRect();
+        c.cx = r.left - pr.left + r.width / 2;
+        c.cy = r.top - pr.top + r.height / 2;
+      });
+    }
+    function paint() { chars.forEach(function (c) { c.node.style.fontVariationSettings = '"opsz" 120,"wght" ' + Math.round(c.w); }); }
+    function rest() { chars.forEach(function (c, i) { c.target = 360 + 140 * Math.sin((i / Math.max(chars.length - 1, 1)) * Math.PI); }); }
+
+    measure();
+    window.addEventListener("resize", measure, { passive: true });
+    rest();
+    chars.forEach(function (c) { c.w = c.target; });
+    paint();
+    if (reduce || !window.requestAnimationFrame) return;
+
+    var running = false;
+    function tick() {
+      var moving = false;
+      chars.forEach(function (c) {
+        var d = c.target - c.w;
+        if (Math.abs(d) > 0.7) { c.w += d * 0.17; moving = true; } else c.w = c.target;
+      });
+      paint();
+      if (moving) requestAnimationFrame(tick); else running = false;
+    }
+    function kick() { if (!running) { running = true; requestAnimationFrame(tick); } }
+
+    plate.addEventListener("pointermove", function (e) {
+      if (e.pointerType === "touch") return;
+      var pr = plate.getBoundingClientRect();
+      var px = e.clientX - pr.left, py = e.clientY - pr.top;
+      var R = Math.max(pr.width * 0.33, 170);
+      chars.forEach(function (c) {
+        var dx = c.cx - px, dy = (c.cy - py) * 1.5;
+        var f = Math.max(0, 1 - Math.sqrt(dx * dx + dy * dy) / R);
+        c.target = 350 + 350 * f * f;
+      });
+      kick();
+    }, { passive: true });
+    plate.addEventListener("pointerleave", function () { rest(); kick(); });
+
+    var t0 = null;
+    requestAnimationFrame(function sweep(ts) {
+      if (t0 === null) t0 = ts;
+      var p = Math.min((ts - t0) / 1300, 1);
+      var head = p * (chars.length + 6) - 3;
+      chars.forEach(function (c, i) {
+        var f = Math.max(0, 1 - Math.abs(i - head) / 3.4);
+        c.w = 360 + 140 * Math.sin((i / Math.max(chars.length - 1, 1)) * Math.PI) + 240 * f;
+      });
+      paint();
+      if (p < 1) requestAnimationFrame(sweep); else { rest(); kick(); }
+    });
+  })();
+
+  /* ===== hero sparkline ===== */
+  (function spark() {
+    var svg = document.getElementById("heroSpark");
+    if (!svg) return;
+    var W = 150, H = 54, pad = 5;
+    var vals = [74, 70, 66, 63, 68, 77, 86, 92, 88, 81, 76, 86];
+    var mn = 55, mx = 100;
+    var pts = vals.map(function (v, i) {
+      return [pad + (i / (vals.length - 1)) * (W - pad * 2), H - pad - ((v - mn) / (mx - mn)) * (H - pad * 2)];
+    });
+    var defs = el("defs", {});
+    var g = el("linearGradient", { id: "spk", x1: "0", y1: "0", x2: "0", y2: "1" });
+    g.appendChild(el("stop", { offset: "0%", "stop-color": "#A8822B", "stop-opacity": ".32" }));
+    g.appendChild(el("stop", { offset: "100%", "stop-color": "#A8822B", "stop-opacity": "0" }));
+    defs.appendChild(g); svg.appendChild(defs);
+    svg.appendChild(el("path", { d: path(pts) + " L" + (W - pad) + " " + (H - pad) + " L" + pad + " " + (H - pad) + " Z", fill: "url(#spk)", stroke: "none" }));
+    svg.appendChild(el("path", { d: path(pts), fill: "none", stroke: "#A8822B", "stroke-width": "1.6", "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    var last = pts[pts.length - 1];
+    svg.appendChild(el("circle", { cx: last[0], cy: last[1], r: "3", fill: "#A8822B" }));
+  })();
+
+  /* ===== phone menu ===== */
+  (function overlay() {
+    var btn = document.getElementById("menuBtn"), ov = document.getElementById("overlay"), close = document.getElementById("ovClose");
+    if (!btn || !ov || !close) return;
+    var lastY = 0;
+    function open() { lastY = window.scrollY; ov.hidden = false; document.body.classList.add("locked"); btn.setAttribute("aria-expanded", "true"); close.focus(); }
+    function shut(goto) {
+      ov.hidden = true; document.body.classList.remove("locked"); btn.setAttribute("aria-expanded", "false");
+      if (goto) {
+        var t = document.querySelector(goto);
+        if (t) { window.scrollTo(0, lastY); requestAnimationFrame(function () { t.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" }); }); return; }
+      }
+      window.scrollTo(0, lastY); btn.focus();
+    }
+    btn.addEventListener("click", open);
+    close.addEventListener("click", function () { shut(null); });
+    ov.addEventListener("click", function (e) {
+      var a = e.target.closest("a");
+      if (!a) return;
+      var href = a.getAttribute("href");
+      if (href && href.charAt(0) === "#") { e.preventDefault(); shut(href); } else { shut(null); }
+    });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !ov.hidden) shut(null); });
+    window.addEventListener("resize", function () { if (!ov.hidden && window.innerWidth > 820) shut(null); });
+  })();
+
+  /* ===== PDF download =====
+     On a normal host the anchor downloads the file itself. Inside the claude.ai
+     artifact viewer the frame can't start a download, so route through the
+     downloads capability when window.claude is present. */
+  (function pdfDownload() {
+    var PDF = "Linza-Sara-Johnson-Resume.pdf";
+    var resolved = false, api = null;
+    function getApi() {
+      if (resolved) return Promise.resolve(api);
+      if (!(window.claude && typeof window.claude.use === "function")) return Promise.resolve(null);
+      return window.claude.use("downloads").then(function (d) { resolved = true; api = d; return d; },
+        function () { resolved = true; return null; });
+    }
+    function flash(lbl, text, orig) {
+      lbl.textContent = text;
+      setTimeout(function () { lbl.textContent = orig; }, 2600);
+    }
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest("[data-pdf]");
+      if (!a) return;
+      if (!(window.claude && typeof window.claude.use === "function")) return; // real host: let the link work
+      e.preventDefault();
+      var lbl = a.querySelector(".lbl") || a;
+      var orig = lbl.textContent;
+      lbl.textContent = "Preparing…";
+      getApi().then(function (d) {
+        if (!d) { flash(lbl, "Opens on the live site", orig); return null; }
+        return fetch(PDF).then(function (r) {
+          if (!r.ok) throw new Error("fetch " + r.status);
+          return r.blob();
+        }).then(function (blob) {
+          return d.save({ filename: PDF, data: blob });
+        }).then(function () { flash(lbl, "Saved ✓", orig); });
+      }).catch(function (err) {
+        var code = err && err.code;
+        if (code === "declined") lbl.textContent = orig;
+        else flash(lbl, "Couldn't save — try the live site", orig);
+      });
+    });
+  })();
+
+  /* ===== résumé sheet ===== */
+  (function sheet() {
+    var sh = document.getElementById("sheet"), close = document.getElementById("sheetClose");
+    if (!sh || !close) return;
+    var opener = null, lastY = 0;
+
+    function open(trigger) {
+      opener = trigger || null;
+      lastY = window.scrollY;
+      sh.hidden = false;
+      document.body.classList.add("locked");
+      close.focus();
+    }
+    function shut() {
+      sh.hidden = true;
+      document.body.classList.remove("locked");
+      window.scrollTo(0, lastY);
+      if (opener && opener.focus) opener.focus();
+    }
+
+    document.addEventListener("click", function (e) {
+      var t = e.target.closest("[data-resume]");
+      if (!t) return;
+      e.preventDefault();
+      var ov = document.getElementById("overlay");
+      if (ov && !ov.hidden) { ov.hidden = true; document.body.classList.remove("locked"); }
+      open(t);
+    });
+
+    close.addEventListener("click", shut);
+    sh.addEventListener("click", function (e) { if (e.target === sh) shut(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !sh.hidden) shut(); });
+  })();
+
+  /* ===== active nav ===== */
+  (function activeNav() {
+    var links = Array.prototype.slice.call(document.querySelectorAll("#dnav a"));
+    var secs = links.map(function (a) { return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
+    if (!("IntersectionObserver" in window) || !secs.length) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        links.forEach(function (a) { a.setAttribute("aria-current", a.getAttribute("href") === "#" + e.target.id ? "true" : "false"); });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    secs.forEach(function (s) { io.observe(s); });
+  })();
+
+  /* ===== copy ===== */
+  Array.prototype.slice.call(document.querySelectorAll("[data-copy]")).forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var txt = btn.getAttribute("data-copy");
+      var ok = function () { var o = btn.textContent; btn.textContent = "Copied"; setTimeout(function () { btn.textContent = o; }, 1600); };
+      var fb = function () {
+        var row = btn.closest(".crow"), v = row && row.querySelector(".v");
+        if (!v) return;
+        var r = document.createRange(); r.selectNodeContents(v);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        btn.textContent = "Selected"; setTimeout(function () { btn.textContent = "Copy"; }, 1800);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(ok, fb);
+      else fb();
+    });
+  });
+
+  /* ===== Cognifyz chart ===== */
+  (function xpChart() {
+    var svg = document.getElementById("xpChart");
+    if (!svg) return;
+    var W = 420, H = 150, pl = 30, pr = 6, pt = 8, pb = 22;
+    var pw = W - pl - pr, ph = H - pt - pb;
+    var vals = [34, 52, 41, 68, 59, 77, 71, 88], labs = ["J", "F", "M", "A", "M", "J", "J", "A"];
+    [0, 50, 100].forEach(function (v) {
+      var yy = pt + ph - (v / 100) * ph;
+      svg.appendChild(el("line", { x1: pl, y1: yy, x2: W - pr, y2: yy, stroke: "#E4D7C4", "stroke-width": "1" }));
+      var t = el("text", { x: pl - 7, y: yy + 3, "text-anchor": "end", fill: "#9A8A78", "font-size": "8.5", "font-family": "IBM Plex Mono, monospace" });
+      t.textContent = v; svg.appendChild(t);
+    });
+    var bw = pw / vals.length;
+    vals.forEach(function (v, i) {
+      var h = (v / 100) * ph, last = i === vals.length - 1;
+      svg.appendChild(el("rect", { x: pl + i * bw + bw * 0.22, y: pt + ph - h, width: bw * 0.56, height: h, rx: "4",
+        fill: last ? "#C9A84C" : "#0F5B4C", "fill-opacity": last ? "1" : ".22" }));
+      var t = el("text", { x: pl + i * bw + bw / 2, y: H - 7, "text-anchor": "middle", fill: "#9A8A78", "font-size": "8.5", "font-family": "IBM Plex Mono, monospace" });
+      t.textContent = labs[i]; svg.appendChild(t);
+    });
+    var pts = vals.map(function (v, i) { return [pl + i * bw + bw / 2, pt + ph - (v / 100) * ph]; });
+    svg.appendChild(el("path", { d: path(pts), fill: "none", stroke: "#0F5B4C", "stroke-width": "1.4", "stroke-linejoin": "round" }));
+    pts.forEach(function (p) { svg.appendChild(el("circle", { cx: p[0], cy: p[1], r: "2.3", fill: "#FBF7F0", stroke: "#0F5B4C", "stroke-width": "1.3" })); });
+  })();
+
+  /* ===== AQI ===== */
+  var BANDS = [
+    { max: 50,  key: "Good",                           color: "#2E7D5B", advice: "Air quality is satisfactory and poses little or no risk." },
+    { max: 100, key: "Moderate",                       color: "#A8822B", advice: "Acceptable. People unusually sensitive to air pollution may want to limit prolonged outdoor exertion." },
+    { max: 150, key: "Unhealthy for sensitive groups", color: "#BE6B2C", advice: "Children, older adults and people with respiratory conditions should reduce prolonged outdoor exertion." },
+    { max: 200, key: "Unhealthy",                      color: "#B4442F", advice: "Everyone may begin to experience health effects. Sensitive groups should avoid prolonged outdoor exertion." },
+    { max: 300, key: "Very unhealthy",                 color: "#9C3A5A", advice: "Health alert. Everyone should avoid outdoor exertion and keep windows closed where possible." }
+  ];
+  function bandFor(v) { for (var i = 0; i < BANDS.length; i++) if (v <= BANDS[i].max) return BANDS[i]; return BANDS[BANDS.length - 1]; }
+
+  var STATIONS = {
+    central: { name: "Bengaluru · Central",
+      series: [62, 58, 55, 57, 63, 72, 81, 88, 92, 90, 86, 83, 80, 78, 76, 79, 84, 89, 93, 90, 88, 84, 86, 86],
+      ratio: [["PM2.5", .44, "µg/m³"], ["PM10", .83, "µg/m³"], ["NO₂", .28, "µg/m³"], ["O₃", .66, "µg/m³"], ["SO₂", .10, "µg/m³"], ["CO", .007, "mg/m³"]] },
+    peenya: { name: "Peenya Industrial",
+      series: [108, 112, 119, 126, 134, 141, 149, 156, 162, 168, 173, 179, 182, 186, 191, 188, 184, 178, 174, 179, 184, 188, 185, 181],
+      ratio: [["PM2.5", .58, "µg/m³"], ["PM10", .91, "µg/m³"], ["NO₂", .37, "µg/m³"], ["O₃", .49, "µg/m³"], ["SO₂", .14, "µg/m³"], ["CO", .011, "mg/m³"]] },
+    hebbal: { name: "Hebbal",
+      series: [41, 38, 36, 35, 39, 46, 54, 61, 66, 64, 59, 55, 52, 50, 48, 51, 57, 63, 68, 66, 62, 56, 50, 46],
+      ratio: [["PM2.5", .40, "µg/m³"], ["PM10", .74, "µg/m³"], ["NO₂", .24, "µg/m³"], ["O₃", .71, "µg/m³"], ["SO₂", .08, "µg/m³"], ["CO", .006, "mg/m³"]] }
+  };
+
+  var cur = { station: "central", mode: "live", hour: 18 };
+  var body = document.getElementById("dashBody");
+
+  function header(right) {
+    return '<div style="display:flex;flex-wrap:wrap;gap:6px 20px;align-items:baseline;padding-top:20px">' +
+      '<p class="eyebrow muted">' + STATIONS[cur.station].name + '</p>' +
+      '<p class="eyebrow muted" style="margin-left:auto">' + right + '</p></div>';
+  }
+
+  function shell() {
+    var s = STATIONS[cur.station];
+    var rows = s.ratio.map(function (p) {
+      return '<tr><td class="nm">' + p[0] + '</td><td class="val tnum" data-pv="' + p[0] + '">—</td>' +
+        '<td class="bar"><span class="bt"><i data-pb="' + p[0] + '" style="width:0"></i></span></td></tr>';
+    }).join("");
+
+    body.innerHTML = header('<span id="hourOut">—</span>') +
+      '<div class="dash-grid"><div>' +
+        '<p class="eyebrow muted">AQI at selected hour</p>' +
+        '<p class="read"><span class="v tnum" id="aqiVal">—</span><span class="u">US AQI</span></p>' +
+        '<p class="bandline" id="bandLine"><i></i><span>—</span></p>' +
+        '<p class="advice" id="advice"></p>' +
+        '<div id="alertSlot"></div>' +
+      '</div><div>' +
+        '<table class="ptable"><thead><tr><th>Pollutant</th><th>Reading</th><th>Share of scale</th></tr></thead><tbody>' + rows + '</tbody></table>' +
+        '<div class="chart-top"><h4>24-hour trend</h4><span id="peakOut">—</span></div>' +
+        '<svg id="trend" viewBox="0 0 660 200" height="200" role="img"><title>Illustrative 24-hour air quality trend with the safe threshold marked at 100.</title></svg>' +
+        '<div class="scrub"><label for="hourRange">Hour</label>' +
+        '<input type="range" id="hourRange" min="0" max="23" step="1" value="' + cur.hour + '">' +
+        '<output for="hourRange" id="hourVal"></output></div>' +
+      '</div></div>';
+
+    var range = document.getElementById("hourRange");
+    range.addEventListener("input", function () { cur.hour = parseInt(range.value, 10); paintReading(); });
+    attachScrub();
+    drawTrend();
+    paintReading();
+  }
+
+  function paintReading() {
+    var s = STATIONS[cur.station], v = s.series[cur.hour], b = bandFor(v);
+    var hh = (cur.hour < 10 ? "0" + cur.hour : cur.hour) + ":00";
+    var valEl = document.getElementById("aqiVal");
+    if (!valEl) return;
+    valEl.textContent = v; valEl.style.color = b.color;
+
+    var bl = document.getElementById("bandLine");
+    bl.style.color = b.color;
+    bl.innerHTML = '<i></i><span>' + b.key + '</span>';
+    document.getElementById("advice").textContent = b.advice;
+
+    var slot = document.getElementById("alertSlot");
+    if (v > 100) {
+      slot.innerHTML = '<div class="warn" style="border-color:' + b.color + '55;background:' + b.color + '12">' +
+        '<b style="color:' + b.color + '">Threshold exceeded</b>' +
+        '<p>AQI ' + v + ' at ' + hh + ' is above the safe threshold of 100. The alert is raised by the component itself, from the band value.</p></div>';
+    } else {
+      slot.innerHTML = '<p class="note" style="margin-top:18px">Below the alert threshold, so no alert component is rendered.</p>';
+    }
+
+    s.ratio.forEach(function (p) {
+      var raw = v * p[1];
+      var shown = p[0] === "CO" ? raw.toFixed(1) : Math.round(raw);
+      var cell = document.querySelector('[data-pv="' + p[0] + '"]');
+      var bar = document.querySelector('[data-pb="' + p[0] + '"]');
+      if (cell) cell.innerHTML = shown + ' <span style="font-family:var(--mono);font-size:9.5px;color:var(--ink-3)">' + p[2] + '</span>';
+      if (bar) { bar.style.width = clamp(raw / 2, 3, 100) + "%"; bar.style.background = b.color; }
+    });
+
+    var ho = document.getElementById("hourOut"); if (ho) ho.textContent = "Reading at " + hh;
+    var hv = document.getElementById("hourVal"); if (hv) hv.textContent = hh;
+    moveCursor();
+  }
+
+  var CH = { W: 660, H: 200, pl: 36, pr: 14, pt: 16, pb: 30 };
+  function xOf(i) { return CH.pl + (i / 23) * (CH.W - CH.pl - CH.pr); }
+  function yOf(v, max) { return CH.pt + (CH.H - CH.pt - CH.pb) - (v / max) * (CH.H - CH.pt - CH.pb); }
+
+  function drawTrend() {
+    var svg = document.getElementById("trend");
+    if (!svg) return;
+    clear(svg);
+    var t = el("title", {}); t.textContent = "Illustrative 24-hour air quality trend with the safe threshold marked at 100."; svg.appendChild(t);
+    var s = STATIONS[cur.station];
+    var max = Math.max(200, Math.ceil(Math.max.apply(null, s.series) / 50) * 50);
+    svg.setAttribute("data-max", max);
+
+    for (var g = 0; g <= 4; g++) {
+      var v = (max / 4) * g, yy = yOf(v, max);
+      svg.appendChild(el("line", { x1: CH.pl, y1: yy, x2: CH.W - CH.pr, y2: yy, stroke: "#E4D7C4", "stroke-width": "1" }));
+      var tl = el("text", { x: CH.pl - 8, y: yy + 3.5, "text-anchor": "end", fill: "#9A8A78", "font-size": "9.5", "font-family": "IBM Plex Mono, monospace" });
+      tl.textContent = v; svg.appendChild(tl);
+    }
+    for (var i = 0; i < 24; i += 4) {
+      var xl = el("text", { x: xOf(i), y: CH.H - 10, "text-anchor": "middle", fill: "#9A8A78", "font-size": "9.5", "font-family": "IBM Plex Mono, monospace" });
+      xl.textContent = (i < 10 ? "0" + i : i) + ":00"; svg.appendChild(xl);
+    }
+
+    var ty = yOf(100, max);
+    svg.appendChild(el("line", { x1: CH.pl, y1: ty, x2: CH.W - CH.pr, y2: ty, stroke: "#B4442F", "stroke-width": "1", "stroke-dasharray": "4 4" }));
+    var th = el("text", { x: CH.W - CH.pr, y: ty - 7, "text-anchor": "end", fill: "#B4442F", "font-size": "9.5", "font-family": "IBM Plex Mono, monospace", "letter-spacing": ".5" });
+    th.textContent = "SAFE THRESHOLD 100"; svg.appendChild(th);
+
+    var pts = s.series.map(function (v2, i2) { return [xOf(i2), yOf(v2, max)]; });
+    var defs = el("defs", {});
+    var grad = el("linearGradient", { id: "trGrad", x1: "0", y1: "0", x2: "0", y2: "1" });
+    grad.appendChild(el("stop", { offset: "0%", "stop-color": "#0F5B4C", "stop-opacity": ".18" }));
+    grad.appendChild(el("stop", { offset: "100%", "stop-color": "#0F5B4C", "stop-opacity": "0" }));
+    defs.appendChild(grad); svg.appendChild(defs);
+    svg.appendChild(el("path", { d: path(pts) + " L" + xOf(23) + " " + yOf(0, max) + " L" + CH.pl + " " + yOf(0, max) + " Z", fill: "url(#trGrad)", stroke: "none" }));
+
+    var line = el("path", { d: path(pts), fill: "none", stroke: "#0F5B4C", "stroke-width": "1.9", "stroke-linejoin": "round", "stroke-linecap": "round" });
+    svg.appendChild(line);
+
+    var cursor = el("g", {});
+    cursor.appendChild(el("line", { id: "curLine", x1: 0, y1: CH.pt, x2: 0, y2: CH.H - CH.pb, stroke: "#9A8A78", "stroke-width": "1", "stroke-dasharray": "3 3" }));
+    cursor.appendChild(el("circle", { id: "curDot", cx: 0, cy: 0, r: "5", fill: "#FBF7F0", stroke: "#0F5B4C", "stroke-width": "2.2" }));
+    svg.appendChild(cursor);
+
+    var po = document.getElementById("peakOut");
+    if (po) po.textContent = "00:00 — 23:00 · peak " + Math.max.apply(null, s.series);
+
+    if (!reduce && line.getTotalLength) {
+      var L = line.getTotalLength();
+      line.setAttribute("stroke-dasharray", L);
+      line.setAttribute("stroke-dashoffset", L);
+      line.style.transition = "stroke-dashoffset .9s ease-out";
+      requestAnimationFrame(function () { line.setAttribute("stroke-dashoffset", "0"); });
+    }
+  }
+
+  function moveCursor() {
+    var svg = document.getElementById("trend");
+    if (!svg) return;
+    var max = parseFloat(svg.getAttribute("data-max")) || 200;
+    var s = STATIONS[cur.station];
+    var x = xOf(cur.hour), y = yOf(s.series[cur.hour], max);
+    var ln = document.getElementById("curLine"), dot = document.getElementById("curDot");
+    if (ln) { ln.setAttribute("x1", x); ln.setAttribute("x2", x); }
+    if (dot) { dot.setAttribute("cx", x); dot.setAttribute("cy", y); dot.setAttribute("stroke", bandFor(s.series[cur.hour]).color); }
+  }
+
+  function attachScrub() {
+    var svg = document.getElementById("trend");
+    if (!svg) return;
+    var dragging = false;
+    function pick(e) {
+      var r = svg.getBoundingClientRect();
+      var rel = (e.clientX - r.left) / r.width * CH.W;
+      var frac = (rel - CH.pl) / (CH.W - CH.pl - CH.pr);
+      var h = Math.round(clamp(frac, 0, 1) * 23);
+      if (h !== cur.hour) {
+        cur.hour = h;
+        var rg = document.getElementById("hourRange");
+        if (rg) rg.value = String(h);
+        paintReading();
+      }
+    }
+    svg.addEventListener("pointerdown", function (e) { dragging = true; svg.setPointerCapture(e.pointerId); pick(e); });
+    svg.addEventListener("pointermove", function (e) { if (dragging || e.pointerType === "mouse") pick(e); });
+    svg.addEventListener("pointerup", function (e) { dragging = false; try { svg.releasePointerCapture(e.pointerId); } catch (err) {} });
+    svg.addEventListener("pointercancel", function () { dragging = false; });
+  }
+
+  function renderDash() {
+    if (!body) return;
+    if (cur.mode === "loading") {
+      var cells = "";
+      for (var i = 0; i < 6; i++) {
+        cells += '<tr><td class="nm"><span class="sk anim" style="height:10px;width:50px"></span></td>' +
+          '<td class="val"><span class="sk anim" style="height:16px;width:54px"></span></td>' +
+          '<td class="bar"><span class="sk anim" style="height:4px;width:100%"></span></td></tr>';
+      }
+      body.innerHTML = header("Fetching…") +
+        '<div class="dash-grid"><div>' +
+          '<span class="sk anim" style="height:74px;width:156px"></span>' +
+          '<span class="sk anim" style="height:34px;width:150px;margin-top:16px;border-radius:999px"></span>' +
+          '<span class="sk anim" style="height:11px;width:100%;margin-top:18px"></span>' +
+          '<span class="sk anim" style="height:11px;width:76%;margin-top:8px"></span>' +
+          '<p class="note" style="margin-top:18px">Skeleton while the request is in flight.</p>' +
+        '</div><div>' +
+          '<table class="ptable"><thead><tr><th>Pollutant</th><th>Reading</th><th>Share of scale</th></tr></thead><tbody>' + cells + '</tbody></table>' +
+          '<span class="sk anim" style="height:170px;width:100%"></span>' +
+        '</div></div>';
+      return;
+    }
+    if (cur.mode === "error") {
+      body.innerHTML = header("Last attempt failed") +
+        '<div class="errbox">' +
+          '<p class="eyebrow" style="color:#B4442F">Request failed</p>' +
+          '<h4>The air quality service didn\'t respond.</h4>' +
+          '<p class="body">The most recent reading is over an hour old, so it is not shown rather than shown as current. Check the connection and try again.</p>' +
+          '<button class="pill pill-out" id="retry" type="button">Retry request ↻</button>' +
+          '<p class="note">An explicit failure path instead of an empty dashboard.</p>' +
+        '</div>';
+      var r = document.getElementById("retry");
+      if (r) r.addEventListener("click", function () { setMode("loading"); setTimeout(function () { setMode("live"); }, 1100); });
+      return;
+    }
+    shell();
+  }
+
+  function press(boxId, attr, val) {
+    var box = document.getElementById(boxId);
+    if (!box) return;
+    Array.prototype.slice.call(box.querySelectorAll("button")).forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute(attr) === val));
+    });
+  }
+  function setMode(m) { cur.mode = m; press("stateBtns", "data-state", m); renderDash(); }
+
+  (function initDash() {
+    var sb = document.getElementById("stationBtns"), tb = document.getElementById("stateBtns");
+    if (!sb || !tb || !body) return;
+    sb.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-station]");
+      if (!b) return;
+      cur.station = b.getAttribute("data-station");
+      press("stationBtns", "data-station", cur.station);
+      if (cur.mode !== "live") setMode("live"); else renderDash();
+    });
+    tb.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-state]");
+      if (!b) return;
+      setMode(b.getAttribute("data-state"));
+    });
+    renderDash();
+  })();
+
+  /* ===== spam heuristic ===== */
+  (function spam() {
+    var inp = document.getElementById("spamIn"), out = document.getElementById("spamOut");
+    if (!inp || !out) return;
+    var LURES = ["verify", "account", "suspended", "click", "here", "password", "urgent", "immediately",
+      "confirm", "winner", "prize", "claim", "otp", "bank", "24hrs", "expire", "expired", "login",
+      "security", "unusual", "limited", "act", "free", "gift", "refund", "invoice", "wire"];
+    function esc(s) { return s.replace(/[&<>"]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]; }); }
+    function run() {
+      var parts = inp.value.split(/(\s+)/), total = 0, hits = 0, html = "";
+      parts.forEach(function (p) {
+        if (/^\s+$/.test(p)) { html += " "; return; }
+        var w = p.replace(/[^a-z0-9]/gi, "").toLowerCase();
+        if (!w) { html += "<b>" + esc(p) + "</b>"; return; }
+        total++;
+        if (LURES.indexOf(w) !== -1) { hits++; html += "<mark>" + esc(p) + "</mark>"; }
+        else html += "<b>" + esc(p) + "</b>";
+      });
+      out.innerHTML = html || "<b>Type a message above.</b>";
+      var pct = Math.round(Math.min(hits / Math.max(total * 0.22, 1), 1) * 100);
+      var col = pct >= 55 ? "#B4442F" : pct >= 25 ? "#A8822B" : "#2E7D5B";
+      var bar = document.getElementById("spamBar"), vd = document.getElementById("spamVerdict"), sc = document.getElementById("spamScore");
+      bar.style.width = pct + "%"; bar.style.background = col;
+      vd.textContent = pct >= 55 ? "Flagged" : pct >= 25 ? "Suspicious" : "Looks fine";
+      vd.style.color = col;
+      sc.textContent = pct + " / 100";
+    }
+    inp.addEventListener("input", run);
+    run();
+  })();
+
+  /* ===== ECG ===== */
+  (function ecg() {
+    var svg = document.getElementById("ecg"), btns = document.getElementById("ecgBtns");
+    if (!svg || !btns) return;
+    var W = 320, H = 104, mid = 58;
+    function draw(mode) {
+      clear(svg);
+      svg.appendChild(el("line", { x1: 0, y1: mid, x2: W, y2: mid, stroke: "#E4D7C4", "stroke-width": "1" }));
+      var beats = mode === "irregular"
+        ? [{ x: 10, s: 1 }, { x: 78, s: 1 }, { x: 140, s: .55 }, { x: 206, s: 1 }, { x: 272, s: 1 }]
+        : [{ x: 10, s: 1 }, { x: 74, s: 1 }, { x: 138, s: 1 }, { x: 202, s: 1 }, { x: 266, s: 1 }];
+      var d = "M0 " + mid;
+      beats.forEach(function (b) {
+        var x = b.x, s = b.s;
+        d += " L" + (x - 4) + " " + mid;
+        d += " Q" + (x + 2) + " " + (mid - 8 * s) + " " + (x + 8) + " " + mid;
+        d += " L" + (x + 13) + " " + (mid + 6 * s);
+        d += " L" + (x + 18) + " " + (mid - 34 * s);
+        d += " L" + (x + 23) + " " + (mid + 12 * s);
+        d += " L" + (x + 29) + " " + mid;
+        d += " Q" + (x + 37) + " " + (mid - 11 * s) + " " + (x + 45) + " " + mid;
+      });
+      d += " L" + W + " " + mid;
+      var p = el("path", { d: d, fill: "none", stroke: "#0F5B4C", "stroke-width": "1.6", "stroke-linejoin": "round", "stroke-linecap": "round" });
+      svg.appendChild(p);
+      if (mode === "irregular") {
+        svg.appendChild(el("rect", { x: 132, y: 8, width: 62, height: H - 20, rx: "6", fill: "#C9A84C", "fill-opacity": ".16", stroke: "#C9A84C", "stroke-width": "1" }));
+        var t = el("text", { x: 163, y: 20, "text-anchor": "middle", fill: "#96761F", "font-size": "8.5", "font-family": "IBM Plex Mono, monospace", "letter-spacing": "1" });
+        t.textContent = "FLAGGED"; svg.appendChild(t);
+      }
+      if (!reduce && p.getTotalLength) {
+        var L = p.getTotalLength();
+        p.setAttribute("stroke-dasharray", L); p.setAttribute("stroke-dashoffset", L);
+        p.style.transition = "stroke-dashoffset .8s ease-out";
+        requestAnimationFrame(function () { p.setAttribute("stroke-dashoffset", "0"); });
+      }
+      document.getElementById("ecgRead").textContent = mode === "irregular" ? "R–R interval shortens at beat 3" : "Regular R–R interval";
+      var flag = document.getElementById("ecgFlag");
+      flag.textContent = mode === "irregular" ? "Anomaly flagged" : "No anomaly";
+      flag.style.color = mode === "irregular" ? "#96761F" : "";
+    }
+    btns.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-rhythm]");
+      if (!b) return;
+      var m = b.getAttribute("data-rhythm");
+      press("ecgBtns", "data-rhythm", m);
+      draw(m);
+    });
+    draw("normal");
+  })();
+
+  /* ===== leaf receptive field ===== */
+  (function leafDemo() {
+    var svg = document.getElementById("leafStage");
+    if (!svg) return;
+    var W = 320, H = 118, PS = 26;
+    var px = 148, py = 44, veins = [];
+
+    function build() {
+      clear(svg);
+      var defs = el("defs", {});
+      var mclip = el("clipPath", { id: "magClip" });
+      mclip.appendChild(el("rect", { x: 12, y: 30, width: 58, height: 58, rx: 8 }));
+      defs.appendChild(mclip);
+      svg.appendChild(defs);
+
+      var g = el("g", { id: "leafArt" });
+      g.appendChild(el("path", { d: "M166 8 C210 30 224 64 166 108 C108 64 122 30 166 8 Z", fill: "#0F5B4C", "fill-opacity": ".10", stroke: "#0F5B4C", "stroke-width": "1.2" }));
+      g.appendChild(el("path", { d: "M166 10 L166 106", stroke: "#0F5B4C", "stroke-width": "1.3", fill: "none" }));
+      veins = [];
+      for (var i = 0; i < 6; i++) {
+        var yy = 24 + i * 13, sp = 17 + i * 6 - (i > 3 ? (i - 3) * 8 : 0);
+        g.appendChild(el("path", { d: "M166 " + yy + " Q" + (166 - sp * .6) + " " + (yy + 5) + " " + (166 - sp) + " " + (yy + 15), stroke: "#0F5B4C", "stroke-opacity": ".5", "stroke-width": "1", fill: "none" }));
+        g.appendChild(el("path", { d: "M166 " + yy + " Q" + (166 + sp * .6) + " " + (yy + 5) + " " + (166 + sp) + " " + (yy + 15), stroke: "#0F5B4C", "stroke-opacity": ".5", "stroke-width": "1", fill: "none" }));
+        veins.push([166 - sp, yy + 15], [166 + sp, yy + 15], [166, yy]);
+      }
+      svg.appendChild(g);
+
+      for (var gx = 140; gx <= 192; gx += PS) {
+        for (var gy = 14; gy <= 92; gy += PS) {
+          svg.appendChild(el("rect", { x: gx, y: gy, width: PS, height: PS, fill: "none", stroke: "#E4D7C4", "stroke-width": "1" }));
+        }
+      }
+      svg.appendChild(el("rect", { id: "patchWin", x: px, y: py, width: PS, height: PS, rx: "4", fill: "rgba(201,168,76,.14)", stroke: "#C9A84C", "stroke-width": "1.8" }));
+
+      var mag = el("g", {});
+      mag.appendChild(el("rect", { x: 12, y: 30, width: 58, height: 58, rx: "8", fill: "#FBF7F0", stroke: "#E4D7C4", "stroke-width": "1" }));
+      var inner = el("g", { "clip-path": "url(#magClip)" });
+      var use = el("use", { id: "magUse" });
+      use.setAttribute("href", "#leafArt");
+      use.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#leafArt");
+      inner.appendChild(use);
+      mag.appendChild(inner);
+      var lbl = el("text", { x: 41, y: 24, "text-anchor": "middle", fill: "#9A8A78", "font-size": "8", "font-family": "IBM Plex Mono, monospace", "letter-spacing": ".8" });
+      lbl.textContent = "PATCH"; mag.appendChild(lbl);
+      svg.appendChild(mag);
+      update();
+    }
+
+    function update() {
+      var win = document.getElementById("patchWin");
+      if (win) { win.setAttribute("x", px); win.setAttribute("y", py); }
+      var use = document.getElementById("magUse");
+      if (use) {
+        var k = 58 / PS;
+        use.setAttribute("transform", "translate(" + (41 - k * (px + PS / 2)).toFixed(2) + "," + (59 - k * (py + PS / 2)).toFixed(2) + ") scale(" + k.toFixed(3) + ")");
+      }
+      var inside = veins.filter(function (v) { return v[0] >= px && v[0] <= px + PS && v[1] >= py && v[1] <= py + PS; }).length;
+      var pos = document.getElementById("patchPos"), den = document.getElementById("patchDen");
+      if (pos) pos.textContent = "patch " + PS + "×" + PS + " · x " + Math.round(px) + " y " + Math.round(py);
+      if (den) { den.textContent = "vein nodes in window: " + inside; den.style.color = inside > 1 ? "#96761F" : ""; }
+    }
+
+    function moveTo(cx, cy) {
+      px = clamp(cx - PS / 2, 86, W - PS - 6);
+      py = clamp(cy - PS / 2, 6, H - PS - 6);
+      update();
+    }
+    function fromEvent(e) {
+      var r = svg.getBoundingClientRect();
+      moveTo((e.clientX - r.left) / r.width * W, (e.clientY - r.top) / r.height * H);
+    }
+    var drag = false;
+    svg.addEventListener("pointerdown", function (e) { drag = true; svg.setPointerCapture(e.pointerId); fromEvent(e); });
+    svg.addEventListener("pointermove", function (e) { if (drag || e.pointerType === "mouse") fromEvent(e); });
+    svg.addEventListener("pointerup", function (e) { drag = false; try { svg.releasePointerCapture(e.pointerId); } catch (err) {} });
+    svg.addEventListener("pointercancel", function () { drag = false; });
+    svg.addEventListener("keydown", function (e) {
+      var step = 6, used = true;
+      if (e.key === "ArrowLeft") px -= step;
+      else if (e.key === "ArrowRight") px += step;
+      else if (e.key === "ArrowUp") py -= step;
+      else if (e.key === "ArrowDown") py += step;
+      else used = false;
+      if (used) { e.preventDefault(); px = clamp(px, 86, W - PS - 6); py = clamp(py, 6, H - PS - 6); update(); }
+    });
+    build();
+  })();
+})();
+</script>
